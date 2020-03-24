@@ -2,7 +2,7 @@
 	<body id="pageBody" class="">
 	
 		<form method="post" action="#" id="printJS-form">
-			<p class="has-line-data" data-line-start="1" data-line-end="3">CERTIFICADO PARA CIRCULAR<br>
+			<p class="has-line-data" data-line-start="1" data-line-end="3"><br>
 EMERGENCIA SANITARIA COVID 19 PARA PRESENTAR ANTE QUIEN CORRESPONDA</p>
 <p class="has-line-data" data-line-start="4" data-line-end="12">Por  el  presente, la compañia (1) <input type="text" name="empresa" id="empresa" value="Autoservicio Gutierrez" placeholder="Nombre de la empresa"> autoriza<br>
 <strong>[al  Sr./Sra./Srita.  <input type="text" name="name" id="name" value="Nombre del Empleado" placeholder="Nombre del empleado">,  DNI  N°  <input type="text" name="dni" id="dni" value="DNI" placeholder="DNI">]</strong> a  circular para<br>
@@ -13,14 +13,16 @@ nuestro país, declarando que (1) <input type="text" name="name2" id="name2" val
 suministro y comercialización) de alimentos y bebidas, considerada como una<br>
 actividad esencial para la población de la República Argentina.</p>
 <p class="has-line-data" data-line-start="13" data-line-end="15"><strong>(1) <input type="text" name="empresa2" id="empresa2" value="Autoservicio Gutierrez" placeholder="Nombre de la empresa"> (CUIT <input type="text" name="cuit" id="cuit" value="20-94197295-1" placeholder="cuit de la empresa">) </strong><br>
-tiene sudomicilio legal en <input type="text" name="dir" id="dir" value="Riglos 6675 - Gonzales Catan" placeholder="direccion de la empresa"> .</p>
+tiene sudomicilio legal en <input type="text" name="dir" id="dir" value="Riglos 6675" placeholder="direccion de la empresa"> <input type="text" name="loc" id="loc" value="Gonzales Catan" placeholder="Localidad de la empresa"> .</p>
 <p class="has-line-data" data-line-start="17" data-line-end="18">(Buenos Aires),  marzo de 2020.</p>
 
 
 							
 							
 						</form>
-<button type="button" onclick="printJS({ printable: 'printJS-form', type: 'html', header: 'PrintJS - Form Element Selection', css: ['https://printjs.crabbly.com/assets/css/main.css?v1'] })">
+<button type="button" onclick="printJS({ printable: 'printJS-form', type: 'html', header: 'Certificado para circular' })">
 							IMPRIMIR
 						</button>
- </body></html>
+ 
+
+<iframe style="visibility: hidden; height: 0; width: 0; position: absolute;" id="printJS" srcdoc="<html><head><title>Document</title></head><body></body></html>"></iframe></body></html>
